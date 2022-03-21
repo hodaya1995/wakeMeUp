@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="coin_appearance">100</integer>
+    <integer name="idle_appearance">500</integer>
+    <integer name="walk_appearance">100</integer>
+    <integer name="blink">100</integer>
+
+    <integer name="duration">40</integer>
+    <integer name="duration2">1000</integer>
+    <integer name="duration3">150</integer>
+    <integer name="duration4">700</integer>
+    <integer name="duration5">180</integer>
+</resources>

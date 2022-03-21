@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="ltr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/remaining_time"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <TextView
+           android:paddingLeft="12dp"
+           android:id="@+id/remaining"
+           android:textSize="20sp"
+           android:textStyle="bold"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+
+<LinearLayout
+    android:visibility="gone"
+    android:id="@+id/dismiss_frame"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.alexfu.countdownview.CountDownView
+        android:id="@+id/count_down_main"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:startDuration="60000"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="snooze"
+            android:id="@+id/snooze_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="dismiss"
+            android:id="@+id/dismiss_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="@color/white"
+        android:id="@+id/calibration"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="3dp"
+
+            android:textSize="20sp"
+            android:id="@+id/calibration_description"
+            android:textStyle="bold"
+            android:layout_weight="3"
+            android:text="Calibrate device first"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="12dp"
+            android:text="calibrate"
+            android:id="@+id/calibrationButton"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="@color/white"
+        android:id="@+id/payment"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="3dp"
+
+            android:textSize="20sp"
+             android:id="@+id/payment_description"
+            android:textStyle="bold"
+            android:layout_weight="3"
+            android:text="Alarm dismissed without waking up"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="pay"
+            android:id="@+id/needToPayButton"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+
+
+<FrameLayout
+   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/background_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+   <FrameLayout
+       android:layout_gravity="center_horizontal"
+       android:id="@+id/sunMoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/sun"
+            android:src="@drawable/sun2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+       <ImageView
+            android:visibility="gone"
+            android:id="@+id/moon"
+            android:src="@drawable/moon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="88dp"
+            android:paddingTop="12dp" />
+
+        <LinearLayout
+            android:id="@+id/empty"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingBottom="64dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        android:layout_gravity="bottom"
+        android:paddingBottom="2dp"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/alarms_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1242332276700800/8871186498">
+        <!--ads:adUnitId="ca-app-pub-3940256099942544/6300978111"-->
+
+
+    </com.google.android.gms.ads.AdView>
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+</FrameLayout>

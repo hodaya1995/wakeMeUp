@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:tag=":aesthetic_ignore"
+    android:textDirection="ltr"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:alpha="0.8"
+     android:layout_height="wrap_content"
+     android:animateLayoutChanges="true">
+
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:background="@drawable/half_circle_up"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:background="@drawable/half_circle_up"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:background="@drawable/half_circle_up"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:layout_weight="1"
+
+                            android:background="@drawable/half_circle_up"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:layout_weight="1"
+
+                            android:background="@drawable/half_circle_up"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                <FrameLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp">
+
+                        <TextView
+                            android:tag=":aesthetic_ignore"
+                            android:id="@+id/time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:textColor="?android:textColorSecondary"
+                            android:textSize="42sp"
+                            tools:text="0:00" />
+
+                        <me.jfenn.wakeMeUp.views.AestheticSwitchView
+                            android:id="@+id/enable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:tag=":aesthetic_ignore" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:tag=":aesthetic_ignore"
+                        android:id="@+id/nextTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="6dp"
+                        tools:text="Next alarm: 14:00 Friday, January 26"/>
+
+                    <LinearLayout
+                        android:id="@+id/extra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true"
+                        android:orientation="vertical">
+
+                        <me.jfenn.wakeMeUp.views.AestheticCheckBoxView
+
+                            android:tag=":aesthetic_ignore"
+                            android:id="@+id/repeat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:text="@string/title_repeat" />
+
+                        <LinearLayout
+                            android:id="@+id/days"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp">
+
+                            <me.jfenn.wakeMeUp.views.DaySwitch
+                                android:layout_width="0dp"
+                                android:layout_height="42dp"
+                                android:layout_weight="1" />
+
+                            <me.jfenn.wakeMeUp.views.DaySwitch
+                                android:layout_width="0dp"
+                                android:layout_height="42dp"
+                                android:layout_weight="1" />
+
+                            <me.jfenn.wakeMeUp.views.DaySwitch
+                                android:layout_width="0dp"
+                                android:layout_height="42dp"
+                                android:layout_weight="1" />
+
+                            <me.jfenn.wakeMeUp.views.DaySwitch
+                                android:layout_width="0dp"
+                                android:layout_height="42dp"
+                                android:layout_weight="1" />
+
+                            <me.jfenn.wakeMeUp.views.DaySwitch
+                                android:layout_width="0dp"
+                                android:layout_height="42dp"
+                                android:layout_weight="1" />
+
+                            <me.jfenn.wakeMeUp.views.DaySwitch
+                                android:layout_width="0dp"
+                                android:layout_height="42dp"
+                                android:layout_weight="1" />
+
+                            <me.jfenn.wakeMeUp.views.DaySwitch
+                                android:layout_width="0dp"
+                                android:layout_height="42dp"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/row_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="82dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:id="@+id/money"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                    android:gravity="center"
+                                    android:minWidth="72dp"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/moneyImage"
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:scaleType="centerInside"
+                                        app:srcCompat="@drawable/ic_attach_money_24px"
+                                        tools:alpha="1"
+                                        tools:tint="@color/textColorPrimaryNight" />
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:tag=":aesthetic_ignore"
+                                            android:id="@+id/moneyText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:lines="1"
+                                            android:gravity="center"
+                                            android:maxLines="1"
+                                            android:layout_gravity="center"
+                                            android:singleLine="true"
+                                            android:ellipsize="end"
+                                            android:textAlignment="center"
+                                            android:textColor="?android:textColorPrimary"
+                                            android:textSize="14sp" />
+
+                                        <me.jfenn.wakeMeUp.views.DecimalPicker
+                                            android:id="@+id/moneyPicker"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="14sp"/>
+                                    </FrameLayout>
+
+
+
+                                    <TextView
+                                        android:tag=":aesthetic_ignore"
+                                        android:id="@+id/moneyDesc"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:lines="1"
+                                        android:gravity="center"
+                                        android:maxLines="1"
+                                        android:layout_gravity="center"
+                                        android:singleLine="true"
+                                        android:ellipsize="end"
+                                        android:textAlignment="center"
+                                        android:textColor="?android:textColorPrimary"
+                                        android:textSize="14sp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                </LinearLayout>
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:id="@+id/ringtone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                    android:gravity="center"
+                                    android:minWidth="72dp"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/ringtoneImage"
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:scaleType="centerInside"
+                                        app:srcCompat="@drawable/ic_ringtone_disabled"
+                                        tools:alpha="0.333"
+                                        tools:tint="@color/textColorPrimaryNight" />
+
+                                    <TextView
+                                        android:tag=":aesthetic_ignore"
+                                        android:id="@+id/ringtoneText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:lines="1"
+                                        android:maxLines="1"
+                                        android:singleLine="true"
+                                        android:text="@string/title_none"
+                                        android:textAlignment="center"
+                                        android:textColor="?android:textColorPrimary"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:tag=":aesthetic_ignore"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:lines="1"
+                                        android:maxLines="1"
+                                        android:singleLine="true"
+                                        android:textAlignment="center"
+                                        android:textColor="?android:textColorPrimary"
+                                        android:textSize="14sp" />
+
+
+                                </LinearLayout>
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:id="@+id/vibrate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                    android:gravity="center"
+                                    android:minWidth="72dp"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/vibrateImage"
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:scaleType="centerInside"
+                                        app:srcCompat="@drawable/ic_vibrate_to_none"
+                                        tools:tint="@color/textColorPrimaryNight" />
+
+                                    <TextView
+                                        android:tag=":aesthetic_ignore"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:lines="1"
+                                        android:maxLines="1"
+                                        android:singleLine="true"
+                                        android:text="@string/title_vibrate"
+                                        android:textAlignment="center"
+                                        android:textColor="?android:textColorPrimary"
+                                        android:textSize="14sp" />
+                                    <TextView
+                                        android:tag=":aesthetic_ignore"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:lines="1"
+                                        android:maxLines="1"
+                                        android:singleLine="true"
+                                        android:textAlignment="center"
+                                        android:textColor="?android:textColorPrimary"
+                                        android:textSize="14sp" />
+
+
+
+                                </LinearLayout>
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:id="@+id/ttw"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                    android:gravity="center"
+                                    android:minWidth="72dp"
+                                    android:orientation="vertical">
+
+
+
+
+                                    <ImageView
+                                        android:id="@+id/ttwImage"
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:scaleType="centerInside"
+                                        app:srcCompat="@drawable/ic_hourglass_empty_24px"
+                                        tools:alpha="1"
+                                        tools:tint="@color/textColorPrimaryNight" />
+
+
+
+
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            android:tag=":aesthetic_ignore"
+                                            android:id="@+id/ttwText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:ellipsize="end"
+                                            android:lines="1"
+                                            android:maxLines="1"
+                                            android:layout_gravity="center"
+                                            android:singleLine="true"
+                                            android:textAlignment="center"
+                                            android:textColor="?android:textColorPrimary"
+                                            android:textSize="14sp" />
+
+                                        <me.jfenn.wakeMeUp.views.DecimalPicker
+                                            android:id="@+id/ttwPicker"
+                                            app:moneyValue="5"
+                                            app:initialNumber="5"
+                                            app:finalNumber="59"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="16sp"/>
+
+                                    </FrameLayout>
+
+
+
+                                    <TextView
+                                        android:tag=":aesthetic_ignore"
+                                        android:id="@+id/ttwTextDesc"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:lines="1"
+                                        android:maxLines="1"
+                                        android:singleLine="true"
+                                        android:text="minutes"
+                                        android:textAlignment="center"
+                                        android:textColor="?android:textColorPrimary"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:tag=":aesthetic_ignore"
+                                android:textSize="14sp"
+                                android:textColor="?android:textColorPrimary"
+                                android:text="Volume"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <SeekBar
+                                tools:tint="@color/textColorPrimaryNight"
+                                android:id="@+id/volume"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="20dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/expandImage"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start|center_vertical"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/ic_expand"
+                            tools:tint="@color/textColorPrimaryNight" />
+
+
+
+                        <ImageView
+                            android:id="@+id/preview"
+                            app:srcCompat="@drawable/alarm_preview"
+                            android:alpha="0.333"
+                            tools:tint="@color/textColorPrimaryNight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+                        <LinearLayout
+                            android:id="@+id/nameContainer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:tag=":aesthetic_ignore"
+                                android:id="@+id/name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:hint="@string/title_alarm_name"
+                                android:inputType="textCapWords|textAutoComplete|textAutoCorrect"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:singleLine="true"
+                                android:textColor="?android:textColorPrimary"
+                                android:textCursorDrawable="@null"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:id="@+id/underline"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dip"
+                                android:layout_marginBottom="4dp"
+                                android:background="@color/textColorSecondaryNight" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:tag=":aesthetic_ignore"
+                            android:id="@+id/delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start|center_vertical"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:gravity="center"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="4dp"
+                            android:text="@string/title_delete"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="?android:textColorPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/indicators"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end|center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:visibility="gone"
+                            tools:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/repeatIndicator"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/ic_repeat"
+                                tools:alpha="0.333"
+                                tools:tint="@color/textColorPrimaryNight" />
+
+                            <ImageView
+                                android:id="@+id/soundIndicator"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/ic_sound"
+                                tools:alpha="0.333"
+                                tools:tint="@color/textColorPrimaryNight" />
+
+                            <ImageView
+                                android:id="@+id/vibrateIndicator"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/ic_vibrate"
+                                tools:tint="@color/textColorPrimaryNight" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </FrameLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:background="@drawable/half_circle_down"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:background="@drawable/half_circle_down"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:background="@drawable/half_circle_down"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:layout_weight="1"
+
+                            android:background="@drawable/half_circle_down"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:layout_weight="1"
+
+                            android:background="@drawable/half_circle_down"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+        <FrameLayout
+        android:visibility="invisible"
+        android:id="@+id/snooze_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+        <ImageView
+
+        android:visibility="invisible"
+        android:layout_gravity="center|end"
+            android:alpha="0.7"
+        app:srcCompat="@drawable/ic_lock"
+        android:id="@+id/lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp" />
+</FrameLayout>

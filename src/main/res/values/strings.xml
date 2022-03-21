@@ -1,0 +1,177 @@
+<resources>
+    <string name="app_name" translatable="false">wake me please</string>
+    <string name="title_alarm">Alarm %d</string>
+    <string name="title_alarm_next">Next alarm: %s\n%s from now.</string>
+    <string name="title_none">None</string>
+    <string name="title_vibrate">Vibrate</string>
+    <string name="title_repeat">Repeat</string>
+    <string name="title_set_alarm">Alarm</string>
+    <string name="title_set_timer">Timer</string>
+    <string name="title_set_stopwatch">Stopwatch</string>
+    <string name="title_lap">Lap</string>
+    <string name="title_stopwatch">Stopwatch</string>
+    <string name="title_stopwatch_share">%s Stopwatch: %s</string>
+    <string name="title_lap_number" translatable="false">#%d</string>
+    <string name="title_time">Time: %s</string>
+    <string name="title_lap_time">Lap: %s</string>
+    <string name="title_total_time">Total: %s</string>
+    <string name="title_share_results">Share Results…</string>
+    <string name="msg_delete_confirmation">Are you sure you want to delete %s?</string>
+    <string name="title_delete">Delete</string>
+    <string name="title_start_timer">Start Timer</string>
+    <string name="title_auto">Auto</string>
+    <string name="title_sunrise">Sunrise</string>
+    <string name="title_sunset">Sunset</string>
+    <string name="title_theme">Theme</string>
+    <string name="title_appearance">Appearance</string>
+    <string name="title_sound_none">None</string>
+    <string name="title_snooze">Snooze</string>
+    <string name="title_alarms">Alarms</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_ringtones">Ringtones</string>
+    <string name="word_day">day</string>
+    <string name="word_days">days</string>
+    <string name="word_minute">minute</string>
+    <string name="word_minutes">minutes</string>
+    <string name="word_hour">hour</string>
+    <string name="word_hours">hours</string>
+    <string name="word_join">and</string>
+    <string name="title_snooze_custom">Custom…</string>
+    <string name="msg_snoozed_until">Snoozed until %s</string>
+    <string name="title_radio_test">Test</string>
+    <string name="title_radio_create">Create</string>
+    <string name="msg_radio_create">Create a new Radio</string>
+    <string name="msg_radio_url">Paste an \'.m3u8\' Radio URL here…</string>
+    <string name="msg_radio_previous">Choose a Previously Used Radio</string>
+    <string name="title_radio_stop">Stop</string>
+    <string name="title_radio">Radio</string>
+    <string name="title_time_zones">Time Zones</string>
+    <string name="title_behavior">Behavior</string>
+    <string name="title_default_alarm_ringtone">Default Alarm Ringtone</string>
+    <string name="title_default_timer_ringtone">Default Timer Ringtone</string>
+
+    <string name="title_snooze_duration">Snooze duration</string>
+
+
+    <string name="title_sleep_reminder">Sleep Reminder</string>
+    <string name="desc_sleep_reminder">Send a notification reminding you to go to sleep a certain time before your alarm rings if you\'re using your phone.</string>
+    <string name="title_sleep_reminder_time">Sleep Reminder Time</string>
+    <string name="desc_sleep_reminder_time">%1$d hours before</string>
+    <string name="title_slow_wake_up">Slow Wake-up</string>
+    <string name="desc_slow_wake_up">Gradually increase volume when an alarm is ringing.</string>
+    <string name="title_slow_wake_up_time">Slow Wake-up Duration</string>
+    <string name="title_about">About &amp; OSS Licenses</string>
+    <string name="title_choose_time_zone">Choose a Time Zone</string>
+    <string name="msg_sleep_reminder">Your next alarm will ring approximately %s from now. To get your specified amount of sleep in the settings menu, you should go to bed now.</string>
+    <string name="title_alarm_name">Alarm Name</string>
+    <string name="title_background_image">Background Image</string>
+    <string name="title_ringing_background_image">Show Background Image On Alarms/Timers</string>
+    <string name="desc_ringing_background_image">Whether to display the background image when an alarm or timer is ringing.</string>
+    <string name="msg_alarms_empty">You don\'t have any alarms set. Press the \'+\' button to create one.</string>
+    <string name="msg_time_zones_selected">%d Selected</string>
+    <string-array name="array_themes">
+        <item>Schedule</item>
+        <item>Day</item>
+        <item>Night</item>
+       <!-- <item>AMOLED</item>-->
+    </string-array>
+
+    <string name="msg_battery_optimizations_switch_enable">Turn on the switch next to \"Alarmio\". You may need to scroll down… a lot.</string>
+    <string name="title_ignore_battery_optimizations">Ignore Battery Optimizations</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_shut_up_ring_after">Shut up ring after</string>
+    <string name="title_use_in_built_in_speaker">Use in built in speaker</string>
+    <string name="title_override_system_volume">Override system volume</string>
+    <string name="desc_use_in_built_in_speaker">uses the built in speakers of the phone to ring</string>
+    <string name="desc_override_system_volume">overrides the volume of phone\'s system</string>
+    <string name="title_alarm_pref">Alarm</string>
+    <string name="title_volume_pref">Volume</string>
+    <string name="title_general_pref">General</string>
+    <string name="action_search">Song:</string>
+    <string name="allow_shut_up_with_buttons">Allow shut up with buttons</string>
+    <string name="desc_allow_shut_up_with_buttons">stops the ring when screen is off or back button</string>
+    <string name="title_loud_alarms">Loud</string>
+    <string name="title_wake_up_prefernce">After awakening</string>
+    <string name="open_calandar">Launch calendar</string>
+    <string name="open_gmail">Launch Gmail</string>
+    <string name="open_wifi">Turn on Wifi</string>
+    <string name="desc_calandar">opens calendar automatically after waking up</string>
+    <string name="desc_gmail">opens Gmail automatically after waking up</string>
+    <string name="desc_wifi">turns on Wifi automatically after waking up just if Launch Gmail enabled (may ask you for permission)</string>
+    <string name="title_show_snooze_notification">Set snooze notification</string>
+    <string name="title_show_alarm_notification">Set alarm notification</string>
+    <string name="desc_show_alarm_notification">Show notification when the alarm snoozed</string>
+    <string name="desc_show_snooze_notification">Show notification for alarm details</string>
+</resources>
