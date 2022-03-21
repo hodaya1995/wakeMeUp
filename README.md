@@ -8,7 +8,7 @@ simple alarm clock that implements many useful features while following regular 
 
 |Home|New Alarm|Ringing|
 |-----|-----|-----|
-|![img](./src/main/Screenshots/home.png?raw=true)|![img](./src/main/Screenshots/newAlarm.png?raw=true)|![img](./src/main/Screenshots/ringing.png?raw=true)||
+|![<img height="80">](./src/main/Screenshots/home.png?raw=true)|![img](./src/main/Screenshots/newAlarm.png?raw=true)|![img](./src/main/Screenshots/ringing.png?raw=true)||
 
 ## Installation
 
